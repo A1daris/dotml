@@ -1,0 +1,21 @@
+{
+  "name": "bob portfolio",
+  "description": "list of my demo projects",
+  "main": "index.js",
+  "authors": [
+    "Boris Sizov"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "magnific-popup": "^1.1.0"
+  }
+}

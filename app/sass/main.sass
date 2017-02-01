@@ -1,0 +1,184 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: darkgrey
+	opacity: 1
+
+*:-moz-placeholder
+	color: darkgrey
+	opacity: 1
+
+*::-moz-placeholder
+	color: darkgrey
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: darkgrey
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	color: #f1f1f1
+.hidden
+	display: none
+
+
+
+h2
+	text-align: center
+	margin-bottom: 15px
+	// font-family: "ptsans"
+	font-weight: normal
+	text-transform: uppercase
+	font-size: 22px	
+h3
+	margin-top: 15px
+	font-size: 20px
+	letter-spacing: 1.2px
+.s_portfolio
+	position: relative
+	background-size: cover
+	background-attachment: fixed
+	color: $grey
+
+	h2
+		color: $grey
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+
+
+
+.p_item
+	margin-bottom: 10px
+	ul
+		li
+			font-size: 14px
+			display: inline-block
+			padding: 12px 22px 10px
+			margin-right: 10px
+			background-color: $teal
+			border-radius: 10px
+			line-height: 1.2
+			-webkit-box-shadow: 1px 1px 2px 0px rgba(133,126,133,1);
+			-moz-box-shadow: 1px 1px 2px 0px rgba(133,126,133,1);
+			box-shadow: 1px 1px 2px 0px rgba(133,126,133,1);
+			&:last-child
+				margin-right: 0
+
+.p_image
+	position: absolute
+	top: 40%
+	left: 0
+	display: inline-block
+	background-color: teal
+	height: 40px
+	width: 100%
+	text-align: center
+	// text-transform: uppercase
+	color: $dcolor
+	line-height: 40px
+	opacity: 0.6
+.s_contacts
+	background-color: grey
+	padding: 20px 0 80px
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+.c_form::before
+	content: ''
+	background-color: $dcolor
+	width: 1px
+	height: 105%
+	position: absolute
+	left: 0px
+	
+a
+	text-decoration: none
+	color: $dcolor
+	border-bottom: 1px dashed $dcolor
+	&:hover,
+	&:active,
+		border: none
+		text-decoration: none
+		color: #ccc
+.image_link
+	border-bottom: 0
+	color: $dcolor
+.contact
+	label,
+	input,
+	textarea
+		display: block
+		width: 80%
+	input,
+	textarea
+		padding: 10px
+		font-size: 1.2em
+		border: 0
+	label
+		margin-top: 10px
+		margin-bottom: 5px
+		font-size: 1.1em
+		sup
+			font-size: 0.9em
+			color: brown
+
+	input[type="text"],
+	textarea
+		background-color: $dcolor
+		text-indent: 5px
+		color: grey
+		outline: none
+	textarea
+		height: 120px
+button
+	background-color: $teal
+	border: 0
+	box-shadow: none
+	outline: none
+	margin-top: 1.2em
+	padding: 0.6em 2em
+	border-radius: 10px
+	position: relative
+	&:hover
+		top: 1px
+
+.social
+	text-align: right
+	ul
+		font-size: 1.1em
+
+footer
+	// position: relative
+	// height: 40px
+	padding: 10px
+	background-color: darkgrey
+footer h3
+	width: 100%
+	text-align: center
+	font-family: "ptsans"
+
+	span
+		font-family: "lora"
+@import "media" // Всегда в конце
