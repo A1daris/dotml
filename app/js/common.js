@@ -11,7 +11,19 @@ $(".image_wrap").hover(function () {
 })
 $('.image_link').magnificPopup({
   type: 'image'
-  // other options
-});
 
+});
+//send form data to mail.php
+$("#message").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Message was successfully sent. Thank you.");
+			$("#callback").trigger("reset");
+		});
+		return false;
+	});
 });
