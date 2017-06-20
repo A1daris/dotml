@@ -5,3 +5,4 @@
 /temp/
 /**/*.psd
 /**/Thumbs.db
+gulpfile.js
